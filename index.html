@@ -3,13 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="robots" content="index, follow" />
+
+    <link
+      rel="canonical"
+      href="https://www.henritek.com.br/"
+    />
+
+    <meta
+      property="og:url"
+      content="https://www.henritek.com.br/"
+    />
+
+    <meta
+      property="og:site_name"
+      content="Henritek"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      href="images/hero-image.webp"
+    />
+
     <meta name="description" content="Dedetização, desentupimento, caça vazamentos e infiltrações em Osasco e Grande São Paulo. Atendimento rápido via WhatsApp." />
 
     <!-- Open Graph / WhatsApp / Redes Sociais -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Henritek | Dedetização e Desentupimento em Osasco" />
     <meta property="og:description" content="Dedetização, desentupimento, caça vazamentos e infiltrações em Osasco e Grande São Paulo. Atendimento rápido via WhatsApp." />
-    <meta property="og:image" content="images/hero-image.webp" />
+    <meta
+      property="og:image"
+      content="https://www.henritek.com.br/images/hero-image.webp"
+    />
     <meta property="og:locale" content="pt_BR" />
 
     <title>Henritek | Dedetização e Desentupimento</title>
@@ -54,7 +81,13 @@
             WhatsApp
           </a>
 
-          <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
             <span></span>
             <span></span>
             <span></span>
@@ -104,7 +137,6 @@
             class="hero-image"
             src="images/hero-image.webp"
             alt="Técnico da Henritek trabalhando"
-            loading="lazy"
           />
         </div>
 
@@ -355,7 +387,8 @@
       </div>
 
       <div class="footer-bottom">
-        © 2026 Henritek. Todos os direitos reservados.
+        © <span id="footer-year"></span> Henritek.
+          Todos os direitos reservados.
       </div>
     </footer>
 
